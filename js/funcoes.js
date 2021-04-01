@@ -4,6 +4,20 @@ let operacao = parseInt(prompt("Escolha 1 para soma, 2 para subtração, 3 para 
 
 let segundoNumero = parseFloat(prompt("Informe o segundo númeor"));
 
-let resultado = primeiroNumero + segundoNumero;
 
+if(operacao == 1){
+    let resultado = primeiroNumero + segundoNumero;
 document.write("<h2>" + primeiroNumero + "+" + segundoNumero + "=" + resultado + "</h2>") 
+
+}else if(operacao == 2){
+    let resultado = primeiroNumero - segundoNumero
+    document.write("<h2>" + primeiroNumero + "-" + segundoNumero + "=" + resultado + "</h2>")
+
+}else if(operacao == 3){
+    let resultado = primeiroNumero * segundoNumero
+    document.write("<h2>" + primeiroNumero + "X" + segundoNumero + "=" + resultado + "</h2>")
+
+}else if(operacao == 4){
+    let resultado = primeiroNumero / segundoNumero
+    document.write("<h2>" + primeiroNumero + "/" + segundoNumero + "=" + resultado + "</h2>")
+}
